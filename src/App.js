@@ -39,9 +39,13 @@ function App() {
                   height="200px" />
                 <ul className="skills">
                   {
-                    pet.skills.map((skill, index)=>(
-                      <li key={skill}>{skill}</li>
-                    ))
+                    <div>
+                      <h5>Skills</h5>
+                        {pet.skills.map((skill, index)=>(
+                          <li key={skill}>{skill}</li>
+                          ))
+                        }
+                    </div>
                   }
                 </ul>    
               </li>

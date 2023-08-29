@@ -15,15 +15,22 @@ li{
 .container > li{
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin:1 rem;
-    padding:0.5 rem;
+    margin:1rem;
+    padding:1rem;
 }
 
 .skills{
   display: flex;
 
 }
-.skills>li{
-    text-align: center;
-    padding:0.2rem;
+h5{
+  color:green;
+  align-items: left;
+  padding:-1rem;
+}
+.skills>div>li{
+  align-items: right;
+  text-align: left;
+  padding:0 5rem;
+    
 }
