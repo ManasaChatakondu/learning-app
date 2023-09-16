@@ -1,5 +1,11 @@
+
+import Colorizer from './Colorize';
+import Greeting from './Greeting';
+import FindUser from './FindUser';
+
 import './App.css';
 
+/*
 function App() {
   const pets=[
     {
@@ -56,4 +62,23 @@ function App() {
   );
 }
 
+
+function App(){
+
+  return(
+    <div className="App">
+      <Colorizer/>
+      <Greeting randomMax={3}/>
+    </div>
+  );
+}*/
+
+function App(){
+
+  return(
+    <div className="App">
+      <FindUser/>
+    </div>
+  );
+}
 export default App;
