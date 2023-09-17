@@ -1,30 +1,9 @@
-import { useEffect, useState } from "react";
+import useGithub from './Hooks/useGitHubUser';
 
 
 const GithubUser=({userName})=>{
-    const[user,setuser]=useState(null);
-    const[error,setError]=useState(null);
-    const[loading,setLoading]=useState(false);
-
     
-    useEffect(()=>{
-        const fetchData=async()=>{
-            setLoading(true);
-            console.log(userName);
-            try{
-                console.log(`https://api.github.com/users/${userName}`);
-                const response= await fetch(`https://api.github.com/users/${userName}`);
-                const responseData= await response.json();
-                setLoading(false);
-                setuser(responseData);
-            }
-            catch(error){
-                setError(error);
-                setLoading(false);
-            }
-        }
-        fetchData();
-    },[userName]);
+    const {user, error, loading} = useGithub(userName);
 
     return(
         <div className="github-user">
@@ -32,8 +11,10 @@ const GithubUser=({userName})=>{
             {error && <p>error.message</p>}
             {user&&
                 <ul>
-                    <p>{user.login}</p>
-                    <p>{user.public_repos}</p>
+                    <li>{user.login}</li>
+                    <li>{user.public_repos}</li>
+                    <li><img src={user.avatar_url} alt={user.login}></img></li>
+                    <li>{user.public_repos}</li>
                 </ul>}
         </div>
     );

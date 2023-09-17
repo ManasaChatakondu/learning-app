@@ -2,6 +2,9 @@
 import Colorizer from './Colorize';
 import Greeting from './Greeting';
 import FindUser from './FindUser';
+import CountRef from './CountRef';
+import Focus from './Focus';
+import MovieList from './MovieList';
 
 import './App.css';
 
@@ -69,6 +72,7 @@ function App(){
     <div className="App">
       <Colorizer/>
       <Greeting randomMax={3}/>
+      <FindUser/>
     </div>
   );
 }*/
@@ -77,7 +81,8 @@ function App(){
 
   return(
     <div className="App">
-      <FindUser/>
+    
+      <MovieList/>
     </div>
   );
 }
