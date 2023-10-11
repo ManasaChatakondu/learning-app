@@ -5,7 +5,10 @@ import FindUser from './FindUser';
 import CountRef from './CountRef';
 import Focus from './Focus';
 import MovieList from './MovieList';
-
+import Parent from './Parent';
+import UseCallbackExample from './UseCallback';
+import ShowUsers  from './UseEffectExampleWithFetch';
+import Startup from'./UseContext/Startup';
 import './App.css';
 
 /*
@@ -73,6 +76,7 @@ function App(){
       <Colorizer/>
       <Greeting randomMax={3}/>
       <FindUser/>
+      <MovieList/>
     </div>
   );
 }*/
@@ -81,8 +85,8 @@ function App(){
 
   return(
     <div className="App">
-    
-      <MovieList/>
+      <Startup/>
+      
     </div>
   );
 }

@@ -18,6 +18,19 @@ const MovieList=(props)=>{
                 })}
                 </ul>
             }
+            {
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Director</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {movies.map((movie,index)=>(<tr><td>{movie.Title}</td><td>{movie.Director}</td></tr>))}
+                    </tbody>
+                </table>
+            }
         </div>
     );
 }
