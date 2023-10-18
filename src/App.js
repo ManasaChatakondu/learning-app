@@ -9,6 +9,7 @@ import Parent from './Parent';
 import UseCallbackExample from './UseCallback';
 import ShowUsers  from './UseEffectExampleWithFetch';
 import Startup from'./UseContext/Startup';
+import ReducerApp from './Reducer/ReducerApp';
 import './App.css';
 
 /*
@@ -85,7 +86,7 @@ function App(){
 
   return(
     <div className="App">
-      <Startup/>
+      <ReducerApp/>
       
     </div>
   );

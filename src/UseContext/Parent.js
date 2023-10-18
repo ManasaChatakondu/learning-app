@@ -8,6 +8,7 @@ const Parent=()=>{
     return (
         <div className="parent">
             <h2>{`FamilyName: ${secret.familyName}`}</h2>
+            <input type="range" min="10" max="100"></input>
             <Children/>
         </div>
     )

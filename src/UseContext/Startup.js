@@ -1,6 +1,6 @@
 import Family from './Family';
 import {FamilyContext} from './FamilyContext';
-//import './src/App.css';
+import '../App.css';
 const familySecret={
     familyName:'Kakumani',
     onlyParensCanSee:()=>{
