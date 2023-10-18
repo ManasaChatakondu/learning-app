@@ -18,6 +18,7 @@ const BucketList=()=>{
     });
 
     const handleWish=(e)=>{
+        e.preventDefault();
         const key = e.target.name
         const value = e.target.value
         setWish({...wish,[key]:value})
